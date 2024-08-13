@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Omelette Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(30, 54%, 90%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .content-container {
+      max-width: 600px;
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .image-omelette img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .recipe-title {
+      font-family: "Young Serif", serif;
+      color: hsl(24, 5%, 18%);
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .recipe-subtitle {
+      font-family: "Young Serif", serif;
+      color: rgba(133, 70, 50, 1);
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .recipe-text {
+      color: hsl(24, 5%, 18%);
+      line-height: 1.6;
+    }
+    .preparation, .ingredients, .instructions, .nutrition {
+      margin-top: 20px;
+    }
+    .preparation ul, .ingredients ul, .instructions ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .nutrition table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .nutrition table, .nutrition th, .nutrition td {
+      border: 1px solid hsl(30, 18%, 87%);
+    }
+    .nutrition th, .nutrition td {
+      padding: 10px;
+      text-align: left;
+    }
+    .nutrition span {
+      float: right;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid hsl(30, 18%, 87%);
+      margin: 20px 0;
+    }
+    @media (max-width: 600px) {
+      .content-container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content-container">
+      <div class="image-omelette">
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette plate">
+      </div>
+      <h1 class="recipe-title">Omelette Recipe</h1>
+      <h2 class="recipe-subtitle">A Simple and Delicious Classic</h2>
+      <div class="recipe-text">
+        <section class="ingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>2 eggs</li>
+            <li>30 g grated cheese</li>
+            <li>1 tablespoon milk</li>
+            <li>Salt and pepper to taste</li>
+            <li>Butter for the pan</li>
+          </ul>
+        </section>
+        <section class="preparation">
+          <h3>Preparation</h3>
+          <ul>
+            <li>In a bowl, whisk the eggs with the milk, salt, and pepper.</li>
+            <li>Heat a non-stick pan with a bit of butter over medium heat.</li>
+            <li>Pour the eggs into the pan and cook for about 2 minutes, until they start to set.</li>
+            <li>Sprinkle the grated cheese over half of the omelette.</li>
+            <li>Fold it in half and cook for another 1-2 minutes until the cheese melts.</li>
+            <li>Serve hot.</li>
+          </ul>
+        </section>
+        <section class="instructions">
+          <h3>Instructions</h3>
+          <ol>
+            <li>Prepare the ingredients as listed.</li>
+            <li>Cook the omelette following the preparation steps.</li>
+            <li>Serve immediately for the best results.</li>
+          </ol>
+        </section>
+        <section class="nutrition">
+          <h3>Nutritional Information</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Calories</td>
+                <td>200 kcal</td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td>12 g</td>
+              </tr>
+              <tr>
+                <td>Fat</td>
+                <td>15 g</td>
+              </tr>
+              <tr>
+                <td>Carbohydrates</td>
+                <td>1 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <hr>
+    </div>
+  </main>
+</body>
+</html>
